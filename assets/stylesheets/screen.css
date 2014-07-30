@@ -1,8 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100,400);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100,400);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,7 +75,6 @@ body {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 0px;
   width: 100%;
   height: 1px;
   overflow: visible;
@@ -87,11 +86,9 @@ body {
 
 #content {
   background-color: transparent;
-  margin-left: -360px;
   position: absolute;
   top: -35px;
-  left: 50%;
-  width: 720px;
+  width: 100%;
   height: 70px;
   visibility: visible;
 }
@@ -99,11 +96,42 @@ body {
   font-weight: 100;
   font-size: 24px;
   margin-bottom: 30px;
+  width: 100%;
 }
 #content #counter span + span {
   margin-left: 10px;
 }
 #content #counter .years, #content #counter .months, #content #counter .days {
+  font-weight: 400;
   font-size: 48px;
   line-height: 68px;
+  letter-spacing: -0.05em;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  #content {
+    background-color: transparent;
+    position: absolute;
+    top: -35px;
+    width: 100%;
+    height: 70px;
+    visibility: visible;
+  }
+  #content #counter {
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  #content #counter span + span {
+    margin-left: 10px;
+  }
+  #content #counter .years, #content #counter .months, #content #counter .days {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.05em;
+  }
 }

@@ -71,4 +71,4 @@ CountUp.prototype.updateCounter=function(){
     setTimeout(function(){self.updateCounter();}, 1000);
 }
 
-window.onload=function(){ new CountUp('August 5, 2005 16:00:00', 'counter'); }
+window.onload=function(){ new CountUp('August 5, 2005 18:00:00', 'counter'); }
